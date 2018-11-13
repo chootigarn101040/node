@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 
 const todos = require('./routes/todos');
@@ -13,7 +14,7 @@ app.post('/',function (req,res){
     res.send('Got a POST request');
 });
 
-
+app.use(express.static('public'));
 app.use('/todos', todos);
 
 app.listen(port, () => {
