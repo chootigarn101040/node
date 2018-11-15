@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.use('/todos', todos);
 // default route
 app.get('/',(req,res) =>{
-    res.render('index',{name:"Jidapa"});
+    res.render('index',{name:"eink"});
 });
 
 
